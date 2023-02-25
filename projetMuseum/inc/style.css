@@ -1,0 +1,130 @@
+body{
+    font-family: sans-serif;
+    background-color:ghostwhite;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    width: 16.66%;
+}
+
+img{
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5rem;
+}
+
+p{
+    font-size: 1.5rem;
+    text-align: center;
+    border: solid;
+    border-color: #555555;
+    border-radius: 6px;
+    padding: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3.5rem;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    padding: 1.5rem;
+}
+
+h4{
+    padding-top: 4rem;
+}
+
+h6{
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.button {
+    background-color: #555555;
+    color: white;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    padding: 1.5rem;
+    display: block;
+    text-align: center;
+}
+  
+.button:hover {
+    background-color: white;
+    color: #555555;
+}
+
+.formulaire_r{
+    max-width: 500px;
+    width: 200px;
+    margin: 20px auto;
+    padding-top: 8rem;
+    text-align: center;
+
+}
+
+input{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    width: 96%;
+}
+
+
+.formulaire_l{
+    max-width: 500px;
+    width: 200px;
+    margin: 20px auto;
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.formulaire_a{
+    max-width: 500px;
+    width: 200px;
+    margin: 20px auto;
+    padding-top: 8rem;
+    text-align: center;
+}
