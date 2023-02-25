@@ -1,19 +1,19 @@
 # Museum
-Museum PHP / Maquette Figma
+### Museum PHP / Maquette Figma
 
 
 Bienvenue sur mon premier projet personnel Museum. Ce site prend en compte le style minimaliste ainsi que les codes du musée.
 
 
-Langage :
+#### Langage :
 
   - HTML
   - CSS
   - PHP (principalement)
   
 
-Maquette Museum Figma :
+### Maquette Museum Figma :
 
 
-Mode d'emploie du site :
+### Mode d'emploie du site :
 
