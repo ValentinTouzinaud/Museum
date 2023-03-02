@@ -14,6 +14,8 @@ Bienvenue sur mon premier projet personnel Museum. Ce site prend en compte le st
 
 ### Maquette Museum Figma :
 
+https://www.figma.com/file/rWRCYwMKcNEk33DwiQEyCV/Museum?t=1oAiT7gGDkEL5SAQ-7
+
 
 ### Mode d'emploie du site :
 
