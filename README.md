@@ -19,7 +19,7 @@ https://www.figma.com/file/rWRCYwMKcNEk33DwiQEyCV/Museum?t=1oAiT7gGDkEL5SAQ-7
 
 ### Mode d'emploie du site :
 
-Dans un premier temps il vous faut installer la table museum (disponible dans le fichier) et de lancer un serveur Wamp (pour l'exemple) et d'y inserer cette table.
+Dans un premier temps il vous faut installer la table "museum" (disponible dans le fichier) et de lancer un serveur Wamp (pour l'exemple) et d'y inserer cette table.
 
 Pour lancer Museum, il vous suffit de faire dans un terminal de votre IDE la commande suivante:
 
