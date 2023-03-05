@@ -1,130 +1,1278 @@
-body{
-    font-family: sans-serif;
-    background-color:ghostwhite;
+:after, :before {
+    box-sizing: border-box;
+}
+
+/* Font Inter */
+:root { 
+    font-family: 'Inter', sans-serif; 
+}
+
+@supports (font-variation-settings : normal) {
+    :root { 
+        font-family: 'Inter var', 'sans-serif'; 
+    }
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: 'Inter';
+    background-color: #F2F1F4;
+    color: #1D2424;
+}
+
+img{ 
+    max-width:100%;
+    height: auto;
+    vertical-align: middle;
 }
 
 header{
     position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+    width: 100vw;
+    z-index: 4;
 }
 
-nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style-type: none;
+/* Debut de la Navbar */
+a{
+    color: #1D2424 !important;
 }
 
-ul{
+.navbar{
+    font-family: 'Inter' sans-serif;
+    position: fixed;
     margin: 0;
     padding: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
-li{
-    width: 16.66%;
+.navbar a{
+    font-size: 1.1vw;
+    color: #1D2424;
+    margin-right: 1.5vw;
+    text-decoration: none;
 }
 
-img{
-    width: 290px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5rem;
+.navbar .logo{
+    margin-top: 2vh;
+    font-size: 1.8vw;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 2%;
 }
 
-p{
-    font-size: 1.5rem;
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+    margin-top: 2vh;
+}
+
+.navbar .nav-links ul li.active a{
+    font-weight: 200;
+}
+
+.navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 35px;
+}
+/* Fin de la NavBar */
+
+/* Debut de la LandingPage 1*/
+.LandingPage{
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background-image: url("../img/marbre.png");
+    background-size: cover;
     text-align: center;
-    border: solid;
-    border-color: #555555;
-    border-radius: 6px;
-    padding: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
+.LandingPage h1{ 
+    padding-top: 32vh;
+    font-size: 4.5vw;
+    font-weight: 700;
+    letter-spacing: 0.225em;
+    line-height: 1.3em;
+    margin-left: 17vw;
+    margin-right: 17vw;
+    margin-bottom: 7vh;
+}
 
+.LandingPage h1 #texteImage1{ 
+    background-image: url('../img/bienvenue.png');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
-.container{
+.LandingPage .boutonExplorer{
+    color: #F7F7F7 !important;
+    background-color: #1D2424;
+    border: solid 1px #1D2424;
+    padding: 0.8vw;
+    border-radius: 50px;
+    font-size: 1vw;
+    letter-spacing: 0.20em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.LandingPage .boutonExplorer:hover{
+    color: #1D2424 !important;
+    background-color: #F7F7F7;
+}
+
+.LandingPage .flecheTexte{
+    padding-top: 22vh;
+}
+
+.LandingPage .flecheTexte p{
+    font-size: 1em;
+    padding-bottom: 1.5vh;
+}
+/* Fin de la LandingPage 1 */
+
+/* Debut de la page MuseumPresentation*/
+.MuseumPresentation{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter';
+}
+
+.MuseumPresentation .Page2{
+    padding-top: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.MuseumPresentation .partieTexteGauche{
+    margin-left: 10vh;
+    width: 50%;
+}
+
+.MuseumPresentation h2{
+    font-weight: 700;
+    font-size: 3.5vw;
+    letter-spacing: 0.3em;
+    text-align: end;
+    background-image: url('../img/texteImage2.png');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.MuseumPresentation .longtiret{
+    letter-spacing: -0.05em;
+}
+
+.MuseumPresentation p{
+    margin-left: 3vw;
+    margin-right: 1vw;
+    margin-top: 6vh;
+    font-size: 1.2vw;
+    text-align: end;
+}
+
+.MuseumPresentation .imgStatue1{
+    width: 50%;
+    margin-right: 10vh;
+    text-align: center;
+}
+
+.MuseumPresentation .imgStatue1 .Statue1{
+    width: 55%;
+}
+/* Fin de la page MuseumPresentation */
+
+/* Debut de la page MuseumArtiste*/
+.MuseumArtiste{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter';
+}
+
+.MuseumArtiste .Page3{
+    padding-top: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MuseumArtiste .imgStatue2{
+    width: 50%;
+    margin-left: 10vh;
+    text-align: center;
+}
+
+.MuseumArtiste .imgStatue2 .Statue2{
+    width: 55%;
+}
+
+.MuseumArtiste .partieTexteDroite{
+    margin-right: 10vh;
+    width: 50%;
+}
+
+.MuseumArtiste h2{
+    font-weight: 700;
+    font-size: 3.5vw;
+    letter-spacing: 0.3em;
+    text-align: start;
+    background-image: url('../img/texteImage3.png');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.MuseumArtiste .longtiret{
+    letter-spacing: -0.05em;
+}
+
+.MuseumArtiste p{
+    margin-right: 3vw;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    font-size: 1.2vw;
+    text-align: start;
+}
+
+.MuseumArtiste .boutonDecouvrir{
+    color: #F7F7F7 !important;
+    background-color: #1D2424;
+    border: solid 1px #1D2424;
+    padding: 0.7vw;
+    border-radius: 5px;
+    font-size: 1vw;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.MuseumArtiste .boutonDecouvrir:hover{
+    color: #1D2424 !important;
+    background-color: #F7F7F7;
+}
+/* Fin de la page MuseumArtiste*/
+
+/* Debut de la page Oeuvre*/
+.oeuvre{
+    width: 100%;
+    height: auto;
+}
+
+.oeuvre .container{
+    padding-top: 15vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
-
 }
 
-h1{
+.oeuvre .container .DansLaBoucle img{
+    width: 60%;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.oeuvre  .container .DansLaBoucle p{
+    margin-top: 2vh;
+    margin-left: 3vw;
+    text-align: start;
+    font-size: 1vw;
+}
+/* Fin de la page Oeuvre*/
+
+/* Debut de la page Detail */
+.PageDetail{
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PageDetail .DetailsImage{
+    width: 100%;
     text-align: center;
-    margin-top: 5rem;
-    font-size: 3.5rem;
 }
 
-h2{
-    text-align: center;
+.PageDetail .DetailsImage img{
+    width: 35%;
+    border-radius: 3px;
 }
 
-h3{
-    text-align: center;
-    padding: 1.5rem;
+.PageDetail .espacementVertical{
+    width: 1px;
+    height: 75%;
+    background-color: #1D2424;
 }
 
-h4{
-    padding-top: 4rem;
+.PageDetail .detailTexte{
+    width: 100%;
 }
 
-h6{
-    padding-top: 3rem;
-    text-align: center;
-    font-size: 2rem;
+.PageDetail .detailTexte h1{
+    font-size: 3.5vw;
+    font-weight: 700;
+    letter-spacing: 0.225em;
+    line-height: 1.3em;
+    margin-left: 5vw;
+    margin-bottom: 3vh;
 }
 
+.PageDetail .detailTexte p{
+    margin-left: 5vw;
+    margin-right: 15vw;
+    margin-bottom: 5vh;
+    font-size: 1vw;
+    text-align: justify;
+}
 
-.button {
-    background-color: #555555;
-    color: white;
-    transition-duration: 0.4s;
+.PageDetail .detailTexte a{
+    margin-left: 5vw;
+    color: #F7F7F7 !important;
+    background-color: #1D2424;
+    border: solid 1px #1D2424;
+    padding: 0.5vw;
+    border-radius: 5px;
+    font-size: 1vw;
+    letter-spacing: 0.15em;
     text-decoration: none;
-    padding: 1.5rem;
-    display: block;
-    text-align: center;
-}
-  
-.button:hover {
-    background-color: white;
-    color: #555555;
+    transition: 0.5s;
 }
 
-.formulaire_r{
-    max-width: 500px;
-    width: 200px;
-    margin: 20px auto;
-    padding-top: 8rem;
-    text-align: center;
-
+.PageDetail .detailTexte a:hover{
+    color: #1D2424 !important;
+    background-color: #F7F7F7;
 }
+/* Fin de la page Detail */
 
-input{
-    margin-bottom: 15px;
+
+/* Debut de la page Register */
+.register{
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background-image: url("../img/FondMaquette.png");
+    background-size: cover;
     display: flex;
     align-items: center;
-    width: 96%;
 }
 
+.register .FormRegister{
+    margin-left: 25vw
+}
 
-.formulaire_l{
-    max-width: 500px;
-    width: 200px;
-    margin: 20px auto;
-    padding-top: 8rem;
+.register .FormRegister .formulaire{
+    display: flex;
+    flex-direction: column;
+}
+
+.register .FormRegister h1{
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 3vw;
+    letter-spacing: 0.10em;
+    font-weight: 700;
+}
+
+.register .FormRegister p{
+    margin-bottom: 2.5vh;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.register .FormRegister label{
+    margin-top: 2vh;
+    margin-bottom: 0.5vh;
+    font-size: 1vw;
+}
+
+.register .FormRegister input{
+    border: none;
+    border-radius: 3px;
+    padding: 0.5vw;
+}
+
+.register .FormRegister #envoyer{
+    cursor: pointer;
+    color: #F7F7F7;
+    background-color: #759598;
+    font-size: 1vw;
+    margin-top: 5vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+/* Fin de la page Register */
+
+
+/* Debut de la page Login */
+.login{
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background-image: url("../img/FondMaquette.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.login .FormLogin{
+    margin-left: 25vw
+}
+
+.login .FormLogin .formulaire_l{
+    display: flex;
+    flex-direction: column;
+}
+
+.login .FormLogin h1{
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 3vw;
+    letter-spacing: 0.10em;
+    font-weight: 700;
+}
+
+.login .FormLogin p{
+    margin-bottom: 2.5vh;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.login .FormLogin label{
+    margin-top: 2vh;
+    margin-bottom: 0.5vh;
+    font-size: 1vw;
+}
+
+.login .FormLogin input{
+    border: none;
+    border-radius: 3px;
+    padding: 0.5vw;
+}
+
+.login .FormLogin #envoyer{
+    cursor: pointer;
+    color: #F7F7F7;
+    background-color: #759598;
+    font-size: 1vw;
+    margin-top: 5vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+/* Fin de la page Login*/
+
+
+/* Debut de la page Reservation */
+.reservation{
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background-image: url("../img/FondReservation.png");
+    background-size: cover;
     text-align: center;
 }
 
-.formulaire_a{
-    max-width: 500px;
-    width: 200px;
-    margin: 20px auto;
-    padding-top: 8rem;
-    text-align: center;
+.reservation h1{
+    padding-top: 37vh;
+    font-size: 4.5vw;
+    font-weight: 700;
+    letter-spacing: 0.225em;
+    line-height: 1.3em;
+    margin-bottom: 4vh;
+}
+
+.reservation p{
+    font-weight: 350;
+    font-size: 0.9em;
+    letter-spacing: 0.3em;
+    line-height: 1.3em;
+}
+
+.reservation .flecheTexte{
+    padding-top: 34vh;
+}
+
+.reservation .flecheTexte p{
+    font-size: 1em;
+    padding-bottom: 1.5vh;
+    letter-spacing: 0em;
+}
+
+
+.horaireReserv{
+    width: 100%;
+    height: 100vh;
+}
+
+.horaireReserv .texteReserv{
+    padding-top: 20vh;
+    margin-left: 7vw;
+    margin-bottom: 10vh;
+}
+
+.horaireReserv .texteReserv h2{
+    font-size: 3vw;
+    font-weight: 600;
+    letter-spacing: 0.225em;
+    line-height: 1.3em;
+    margin-left: 0vw;
+}
+
+.espacementReserv{
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    width: 70%;
+    height: 1px;
+    background-color: #1D2424;
+}
+
+.horaireReserv .texteReserv p{
+    font-size: 1.1vw;
+    text-align: justify;
+    margin-right: 28vw;
+    line-height: 1em;
+    margin-bottom: 10vh;
+}
+
+.horaireReserv .lesHoraires{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    margin-right: 10vw;
+    margin-left: -0.5vw;
+}
+
+.horaireReserv .lesHoraires li{
+    margin: 0.5vw;
+    font-size: 1vw;
+}
+/* Fin de la page Reservation */
+
+
+/* Debut de la page Admin */
+.Admin{
+    width: 100%;
+    height: 100vh;
+}
+
+.Admin h2{
+    font-size: 3vw;
+    font-weight: 500;
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+
+.Admin ul{
+    margin-left: 5vw;
+    margin-top: 4vh;
+    margin-bottom: 7vh;
+}
+
+.Admin ul li{
+    margin-bottom: 1vh;
+}
+
+.Admin a{
+    margin-left: 7vw;
+}
+
+.Admin .btnAjouter{
+    margin-left: 5vw;
+    color: #F7F7F7 !important;
+    background-color: #1D2424;
+    border: solid 1px #1D2424;
+    padding: 0.7vw;
+    border-radius: 5px;
+    font-size: 1vw;
+    text-decoration: none;
+}
+/* Fin de la page Admin */
+
+
+/* Debut de la page AjouterOeuvre*/
+.ajouterOeuvre{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ajouterOeuvre form{
+    display: flex;
+    flex-direction: column;
+}
+
+.ajouterOeuvre label{
+    font-size: 1vw;
+    margin-top: 3vh;
+}
+
+.ajouterOeuvre input{
+    margin-bottom: 3vh;
+}
+
+.ajouterOeuvre #envoyer{
+    border: none;
+    background-color: #759598;
+    color: #F7F7F7;
+    font-size: 1.5vw;
+    border-radius: 5px;
+}
+/* Fin de la page AjouterOeuvre*/
+
+
+/* Format tablette */
+@media screen and (max-width: 1000px){
+
+    /* Début Navbar */
+    .navbar{
+        padding: 0;
+    }
+
+    .navbar .logo{
+        color: #1D2424 !important;
+    }
+
+    .navbar a{
+        font-size: 0.8em;
+        margin-left: -1em;
+        color: #1D2424 !important;
+    }
+
+    .navbar .logo{
+        position: absolute;
+        top: 40px;
+        left: 3vw;
+        z-index: 10;
+        font-size: 1em;
+    }
+
+    .navbar .menu-hamburger{
+        display: block;
+        margin-right: 2vw;
+        width: 1.3em;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #F2F1F4;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu{
+        margin-left: 0;
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5vw;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 5px 0;
+        font-size: 2em;
+    }
+    /* Fin Navbar */
+
+
+    /* Debut de la LandingPage 1*/
+    .LandingPage h1{ 
+        font-size: 6vw;
+    }
+
+    .LandingPage .boutonExplorer{
+        padding: 1.2vw;
+        font-size: 2vw;
+    }
+
+    .LandingPage .flecheTexte{
+        padding-top: 26vh;
+    }
+    /* Fin de la LandingPage 1 */
+
+
+    /* Debut de la page MuseumPresentation*/
+    .MuseumPresentation .Page2{
+        padding-top: 10vh;
+        flex-direction: column;
+    }
+
+    .MuseumPresentation .partieTexteGauche{
+        text-align: center;
+        margin-left: 0vh;
+        width: 60%;
+        margin-bottom: 3vh;
+    }
+
+    .MuseumPresentation h2{
+        font-size: 5vw;
+        letter-spacing: 0.25em;
+        text-align: center;
+    }
+
+    .MuseumPresentation .longtiret{
+        letter-spacing: -0.05em;
+    }
+
+    .MuseumPresentation p{
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .MuseumPresentation .imgStatue1{
+        width: 50%;
+        margin-right: 0vh;
+        text-align: center;
+    }
+
+    .MuseumPresentation .imgStatue1 .Statue1{
+        width: 55%;
+    }
+    /* Fin de la page MuseumPresentation */
+
+
+    /* Debut de la page MuseumArtiste*/
+    .MuseumArtiste .Page3{
+        padding-top: 10vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MuseumArtiste .imgStatue2{
+        width: 50%;
+        margin-left: 0vh;
+        text-align: center;
+    }
+
+    .MuseumArtiste .imgStatue2 .Statue2{
+        width: 55%;
+    }
+
+    .MuseumArtiste .partieTexteDroite{
+        margin-top: 6vh;
+        margin-right: 0vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .MuseumArtiste h2{
+        font-size: 5vw;
+        letter-spacing: 0.25em;
+        text-align: center;
+    }
+
+    .MuseumArtiste .longtiret{
+        letter-spacing: -0.05em;
+    }
+
+    .MuseumArtiste p{
+        margin-right: 0vw;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .MuseumArtiste .boutonDecouvrir{
+        text-align: center;
+        border-radius: 5px;
+        font-size: 2vw;
+        margin-left: 8em;
+        margin-right: 8em;
+    }
+    /* Fin de la page MuseumArtiste*/
+
+
+    /* Debut de la page Oeuvre*/
+    .oeuvre .container{
+        padding-top: 15vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .oeuvre .container .DansLaBoucle img{
+        width: 80%;
+        margin-top: 5vh;
+        margin-left: 5vw;
+        margin-right: 3vw;
+    }
+    
+    .oeuvre  .container .DansLaBoucle p{
+        margin-top: 2vh;
+        margin-left: 5vw;
+        text-align: start;
+        font-size: 2vw;
+    }
+    /* Fin de la page Oeuvre*/
+
+
+    /* Debut de la page Detail */
+    .PageDetail{
+        flex-direction: column;
+    }
+
+    .PageDetail .DetailsImage img{
+        width: 25%;
+        border-radius: 3px;
+    }
+
+    .PageDetail .espacementVertical{
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        width: 70%;
+        height: 1px;
+    }
+
+    .PageDetail .detailTexte h1{
+        text-align: center;
+        font-size: 5vw;
+        margin-left: 0vw;
+        margin-bottom: 3vh;
+    }
+
+    .PageDetail .detailTexte p{
+        margin-left: 15vw;
+        margin-right: 15vw;
+        margin-bottom: 5vh;
+        font-size: 2vw;
+    }
+
+    .PageDetail .detailTexte a{
+        margin-left: 45vw;
+        padding: 0.6vw;
+        font-size: 2vw;
+    }
+
+    .PageDetail .detailTexte a:hover{
+        color: #1D2424 !important;
+        background-color: #F7F7F7;
+    }
+    /* Fin de la page Detail */
+
+
+    /* Debut de la page Register */
+    .register{
+        justify-content: center;
+    }
+
+    .register .FormRegister{
+        margin-left: 0vw
+    }
+
+    .register .FormRegister h1{
+        font-size: 5vw;
+    }
+
+    .register .FormRegister p{
+        font-size: 1.5vw;
+    }
+
+    .register .FormRegister label{
+        font-size: 1.5vw;
+    }
+
+    .register .FormRegister #envoyer{
+        font-size: 2vw;
+        margin-left: 11vw;
+        margin-right: 11vw;
+    }
+    /* Fin de la page Register */
+
+
+    /* Debut de la page Login */
+    .login{
+        justify-content: center;
+    }
+
+    .login .FormLogin{
+        margin-left: 0vw
+    }
+
+    .login .FormLogin h1{
+        font-size: 5vw;
+    }
+
+    .login .FormLogin p{
+        font-size: 1.5vw;
+    }
+
+    .login .FormLogin label{
+        font-size: 1.5vw;
+    }
+
+    .login .FormLogin #envoyer{
+        font-size: 2vw;
+        margin-left: 11vw;
+        margin-right: 11vw;
+    }
+    /* Fin de la page Login */
+
+
+    /* Debut de la page Reservation */
+    .reservation h1{
+        padding-top: 38vh;
+        font-size: 6vw;
+        margin-bottom: 3vh;
+    }
+
+    .reservation p{
+        font-size: 0.8em;
+    }
+
+    .horaireReserv .texteReserv{
+        padding-top: 20vh;
+        margin-left: 7vw;
+        margin-bottom: 10vh;
+    }
+
+    .horaireReserv .texteReserv h2{
+        font-size: 5vw;
+    }
+
+    .espacementReserv{
+        width: 80%;
+    }
+
+    .horaireReserv .texteReserv p{
+        font-size: 2vw;
+        margin-right: 15vw;
+    }
+
+    .horaireReserv .lesHoraires{
+        margin-right: 5vw;
+        margin-left: -1.7vw;
+    }
+
+    .horaireReserv .lesHoraires li{
+        margin: 1.5vw;
+        font-size: 1.5vw;
+    }
+    /* Fin de la page Reservation */
+
+
+    /* Debut de la page Admin */
+    .Admin h2{
+        font-size: 5vw;
+        margin-top: 15vh;
+    }
+
+    .Admin ul{
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+    }
+    .Admin .btnAjouter{
+        font-size: 2vw;
+
+    }
+    /* Fin de la page Admin */
+
+
+    /* Debut de la page AjouterOeuvre*/
+    .ajouterOeuvre label{
+        font-size: 2vw;
+    }
+    .ajouterOeuvre #envoyer{
+        font-size: 3vw;
+    }
+    /* Fin de la page AjouterOeuvre*/
+
+}
+
+
+/* Format telephone */
+@media screen and (max-width: 500px){
+    
+    /* Début Navbar */
+    .navbar .logo{
+        font-size: 1.3em;
+        left: 25px;
+    }
+
+    .navbar .menu-hamburger{
+        width: 1.5em;
+    }
+
+    .navbar .nav-links ul li {
+        font-size: 1.5em;
+    }
+    /* Fin Navbar */
+
+     /* Debut de la LandingPage 1*/
+     .LandingPage h1{ 
+        font-size: 10vw;
+        letter-spacing: 0.10em;
+    }
+
+    .LandingPage .boutonExplorer{
+        padding: 2.8vw;
+        font-size: 4vw;
+    }
+
+    .LandingPage .flecheTexte{
+        padding-top: 20vh;
+    }
+    /* Fin de la LandingPage 1 */
+
+    /* Debut de la page MuseumPresentation*/
+
+    .MuseumPresentation .Page2{
+        padding-top: 16vh;
+    }
+
+    .MuseumPresentation .partieTexteGauche{
+        width: 80%;
+    }
+
+    .MuseumPresentation h2{
+        font-size: 8vw;
+    }
+
+    .MuseumPresentation p{
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .MuseumPresentation .imgStatue1{
+        width: 50%;
+        margin-right: 0vh;
+        text-align: center;
+    }
+
+    .MuseumPresentation .imgStatue1 .Statue1{
+        width: 95%;
+    }
+    /* Fin de la page MuseumPresentation */
+
+
+    /* Debut de la page MuseumArtiste*/
+    .MuseumArtiste .Page3{
+        padding-top: 16vh;
+    }
+
+    .MuseumArtiste .imgStatue2 .Statue2{
+        width: 95%;
+    }
+
+    .MuseumArtiste .partieTexteDroite{
+        margin-top: 6vh;
+        width: 80%;
+    }
+
+    .MuseumArtiste h2{
+        font-size: 8vw;
+    }
+
+    .MuseumArtiste p{
+        font-size: 3vw;
+    }
+
+    .MuseumArtiste .boutonDecouvrir{
+        font-size: 4vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+    /* Fin de la page MuseumArtiste*/
+
+
+    /* Debut de la page Oeuvre*/
+    .oeuvre .container{
+        padding-top: 0vh;
+    }
+ 
+    .oeuvre .container .DansLaBoucle img{
+        width: 80%;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        margin-right: 0vw;
+    }
+    
+    .oeuvre  .container .DansLaBoucle p{
+        margin-top: 2vh;
+        margin-left: 10vw;
+        text-align: start;
+        font-size: 3vw;
+    }
+    /* Fin de la page Oeuvre*/
+
+
+    /* Debut de la page Detail */
+    .PageDetail .DetailsImage img{
+        width: 40%;
+    }
+
+    .PageDetail .detailTexte h1{
+        font-size: 8vw;
+    }
+
+    .PageDetail .detailTexte p{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-size: 3.5vw;
+    }
+
+    .PageDetail .detailTexte a{
+        padding: 0.6vw;
+        font-size: 4vw;
+        margin-left: 40vw;
+    }
+
+    .PageDetail .detailTexte a:hover{
+        color: #1D2424 !important;
+        background-color: #F7F7F7;
+    }
+    /* Fin de la page Detail */
+
+
+    /* Debut de la page Register */
+    .register{
+        justify-content: center;
+    }
+
+    .register .FormRegister{
+        margin-left: 0vw
+    }
+
+    .register .FormRegister h1{
+        font-size: 9vw;
+    }
+
+    .register .FormRegister p{
+        font-size: 3vw;
+    }
+
+    .register .FormRegister label{
+        font-size: 3vw;
+    }
+
+    .register .FormRegister #envoyer{
+        font-size: 4vw;
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+    /* Fin de la page Register */
+
+    
+    /* Debut de la page Login */
+    .login{
+        justify-content: center;
+    }
+
+    .login .FormLogin{
+        margin-left: 0vw
+    }
+
+    .login .FormLogin h1{
+        font-size: 9vw;
+    }
+
+    .login .FormLogin p{
+        font-size: 3vw;
+    }
+
+    .login .FormLogin label{
+        font-size: 3vw;
+    }
+
+    .login .FormLogin #envoyer{
+        font-size: 4vw;
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+    /* Fin de la page Login */
+
+
+    /* Debut de la page Reservation */
+    .reservation h1{
+        font-size: 9vw;
+    }
+
+    .horaireReserv .texteReserv{
+        padding-top: 20vh;
+        margin-left: 7vw;
+        margin-bottom: 10vh;
+    }
+
+    .horaireReserv .texteReserv h2{
+        font-size: 7vw;
+    }
+
+    .espacementReserv{
+        width: 90%;
+    }
+
+    .horaireReserv .texteReserv p{
+        font-size: 3vw;
+        margin-right: 10vw;
+    }
+
+    .horaireReserv .lesHoraires{
+        margin-right: 5vw;
+        margin-left: -2vw;
+    }
+
+    .horaireReserv .lesHoraires li{
+        margin: 2.5vw;
+        font-size: 3vw;
+    }
+    /* Fin de la page Reservation */
+
+
+    /* Debut de la page Admin */
+    .Admin h2{
+        font-size: 8vw;
+    }
+    .Admin .btnAjouter{
+        font-size: 4vw;
+    }
+    /* Fin de la page Admin */
+
+    
+    /* Debut de la page AjouterOeuvre*/
+    .ajouterOeuvre label{
+        font-size: 4vw;
+    }
+    .ajouterOeuvre #envoyer{
+        font-size: 5vw;
+    }
+    /* Fin de la page AjouterOeuvre*/
+
 }

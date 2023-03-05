@@ -1,1 +1,1 @@
-<h4> Vous avez déjà réserver </h4>
+<p class="MessageErreur"> Vous avez déjà réserver </p>

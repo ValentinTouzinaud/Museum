@@ -21,22 +21,41 @@ spl_autoload_register('chargerClasse'); //fin Autoload
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title> Art </title>
+        <title> Museum </title>
+        <link rel="stylesheet" href="inc/reset.css">
         <link rel="stylesheet" href="inc/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Font Inter  -->
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <script>
+
+            function ouvrirBurger(){
+    
+                let navLinks = document.querySelector(".nav-links")
+                navLinks.classList.toggle('mobile-menu')
+    
+            }
+        </script>
     </head>
     <body>
         <header>
-        <nav class="crumbs">
-            <ul>
-                <li><a class="button" href="index.php"> Home </a></li>
-                <li><a class="button" href="index.php?action=register"> Register </a></li>
-                <li><a class="button" href="index.php?action=login"> Login </a></li>
-                <li><a class="button" href="index.php?action=admin"> Admin </a></li>
-                <li><a class="button" href="index.php?action=reservation"> Reservation </a></li>
-                <li><a class="button" href="index.php?action=deconnexion"> Deconnexion </a></li>
-            </ul>
-        </nav>
+            <nav class="navbar">
+                <a href="" class="logo"> MUSEUM </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a class="nav-link active" onclick="ouvrirBurger()" href="index.php" > Home </a></li>
+                        <li><a class="nav-link" onclick="ouvrirBurger()" href="index.php?action=register"> Register </a></li>
+                        <li><a class="nav-link" onclick="ouvrirBurger()" href="index.php?action=login"> Login </a></li>
+                        <li><a class="nav-link" onclick="ouvrirBurger()" href="index.php?action=admin"> Admin </a></li>
+                        <li><a class="nav-link" onclick="ouvrirBurger()" href="index.php?action=reservation"> Reservation </a></li>
+                        <li><a class="nav-link" onclick="ouvrirBurger()" href="index.php?action=deconnexion"> Deconnexion </a></li>
+                    </ul>  
+                </div> 
+                <img src="./img/menu-btn.png" alt="menuHamburger" class="menu-hamburger" onclick="ouvrirBurger()">
+            </nav>
         </header>
+        
         <?php 
 
             $afficher = new ControllerFunction();

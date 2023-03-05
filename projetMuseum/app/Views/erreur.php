@@ -1,1 +1,1 @@
-<h4> Erreur de connexion </h4>
+<p class="MessageErreur"> Erreur de connexion </p>
