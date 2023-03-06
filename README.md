@@ -19,10 +19,10 @@ https://www.figma.com/file/rWRCYwMKcNEk33DwiQEyCV/Museum?t=1oAiT7gGDkEL5SAQ-7
 
 ### Mode d'emploie du site :
 
-Dans un premier temps il vous faut installer la table "museum" (disponible dans le fichier) et de lancer un serveur Wamp (pour l'exemple) et d'y inserer cette table.
-
-Pour lancer Museum, il vous suffit de faire dans un terminal de votre IDE la commande suivante:
+Dans un premier temps il vous faut installer le projet.
+Par la suite, via une BD, il vous faut d'importer la BDD "museum"
+Puis il vous suffit de lancer le serveur php via comme par exemple la ligne suivante :
 
   - php -S 127.0.0.1:8000 -t ./ -d display_errors=1
   
-Un lien apparait et il vousz suffit de cliquer dessus pour acceder à Museum :D
+Enfin il vous suffit de cliquer sur le lien :D
